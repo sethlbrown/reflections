@@ -1,0 +1,30 @@
+**How did viewing a diff between two versions of a file help you see the bug that was introduced?**
+
+Assuming that we have a working version and then something breaks, we must assume that something in the most recent changes to the file caused the bug to occur. Using a diff allows us to see the specific lines that have changed so we can scan for the issue.
+
+**How could having easy access to the entire history of a file make you a more efficient programmer in the long term?**
+
+If you need to throw out some code that doesn’t work you could easily revert to a previous version rather than trying to recreate a document in a prior state.
+
+**What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?**
+
+The obvious con is that choosing when to create a commit opens you up to human error. Conversely, that’s also the strength of this approach, because it allows human intelligence to determine what represents an appropriate amount of work. Having a program like Google Docs perform this function means that you will end up with many versions and have much to sift through if you decide you need to find a previous revision.
+
+**Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?**
+
+I think version control systems that deal with multiple files assume some interrelationship between the component files, whereas others, like Google Docs, assume that an individual file does not necessarily relate to any other file.
+
+**How can you use the commands git log and git diff to view the history of files**?
+
+Git log let’s us look through the history of commits that have been made to a project and git diff let’s us compare the differences between any two commits.
+
+**How might using version control make you more confident to make changes that could break something?**
+
+When it’s fairly easy to revert to a previous working state and also to experiment with new code in branches that can be discarded rather than merged, it’s easier to experiment in general.
+
+**Now that you have your workspace set up, what do you want to try using Git for?**
+
+I’ve been using Git for a while, but I’m definitely curious to learn more about some of the more complex branching and merging features.
+
+
+
