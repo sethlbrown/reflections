@@ -5,3 +5,15 @@ Initializing a git repository creates a hidden .git folder containing a history 
 **How is the staging area different from the working directory and the repository? What value do you think it offers?**
 
 The staging area is a place to build up changes that you'd like to ultimately add to the repository. It allows you to literally "stage" items before committing them. This means that you might have work going on in the working directory that you're not interested in pushing to the repository, but there are some files you do want to push up. The staging area provides a safe harbor to do this work.
+
+**How can you use the staging area to make sure you have one commit per logical change?**
+
+You can stage your changes into neat little pieces and then commit them one by one. In this manner, a developer could slowly chip away at a bunch of work in logical chunks to be committed.
+
+**What are some situations when branches would be helpful in keeping your history organized? How would branches help?**
+
+I think branches are helpful when you break off any meaningful chunk of work. Because branches and merging are cheap in Git, it seems like a no brainer to make them. If you're in doubt about a new experimental direction, or you want to explore a major fork in your code, branching makes a lot of sense. I use Git in my own work and making "feature branches" for each ticket is considered a best practice.
+
+**How do the diagrams help you visualize the branch structure?**
+
+Git diagrams allow us to easily see if a particular commit has the potential to become orphaned because it has been created in a detached HEAD state and not given its own branch. We can also see where we've stashed and how many branches are currently in play. 
