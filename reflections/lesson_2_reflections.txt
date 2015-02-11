@@ -17,3 +17,12 @@ I think branches are helpful when you break off any meaningful chunk of work. Be
 **How do the diagrams help you visualize the branch structure?**
 
 Git diagrams allow us to easily see if a particular commit has the potential to become orphaned because it has been created in a detached HEAD state and not given its own branch. We can also see where we've stashed and how many branches are currently in play. 
+
+**What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+A merge brings two branches together interweaving their commits chronologically. This means that parent commits for each of the branches are retained behind the new commit. 
+
+**What are the pros and cons of Git's automatic merging vs. always doing merges manually?**
+
+There's no way for an algorithm to account for every conceivable decision that a human being makes when deciding how to resolve merge conflicts, but, assuming there's no conflict, it's a trivial task for a computer to integrate two branches. So automated merging is great, except when it isn't... In those scenarios it makes sense for the computer to defer to the human programmer(s) to figure out how to resolve the conflicting lines.
+
